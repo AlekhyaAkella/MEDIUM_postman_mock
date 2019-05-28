@@ -1,0 +1,58 @@
+ @media (max-width:720px){
+
+    #hide1{
+        display: none;
+      }
+      #hide2{
+        display:none;
+      }
+      #hide3{
+        display: none;
+      }
+    }
+     
+h1{
+    font-size:34px;
+    font-family:sans-serif;
+    /*display:block;
+    text-align: end;*/
+} 
+.txtbtn1 {
+    border: none;
+    background-color:inherit;
+    padding: 14px 28px;
+    font-size: 15px;
+    cursor: pointer;
+    display: inline-block;
+    outline:none;
+    color:skyblue;
+  }
+  .button
+  {
+      margin-top:10px;
+      margin-right:50px;
+      font-size: 15px;
+      background:white;
+  }
+  hr{
+      width=30%;
+  }
+  p{
+    font-family: sans-serif; 
+    font-size:22px;
+  }
+  img{
+    height:60px;
+    width:60px;
+    border-radius:50%;
+    border-block-color:skyblue;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width:3px;
+  }
+  #list{
+    font-family: sans-serif; 
+    font-size:22px;
+  }
+
+ 

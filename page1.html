@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<!--for icon-->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="page1.css">
+	<title>Medium</title>
+
+
+</head>
+
+<body>
+
+
+
+
+
+	<br><br>
+	<div class="container" id="c1">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h1 id="medhide" style="margin-top:10px;"><b>Medium</b></h1>
+				</div>
+
+
+				<div class="col-md-8">
+					<!-- <div class="text-right text-xs-center">-->
+					<div class="icons">
+						<span class="glyphicon glyphicon-search"></span>
+						<button class="txtbtn" style="margin-left:20px;">Become a member</button>
+						<button class="txtbtn1">Sign in</button>
+						<div class="button">
+							<input type="button" value="Get started"
+								style="color:darkturquoise; border-color:darkturquoise; border-radius:5px;">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<br>
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="list-inline" style="font-size: 15px;">
+						<li><a href="#"><b>HOME</b></a></li>
+						<li><a href="#">ONEZERO</a></li>
+						<li><a href="#">ELEMENTAL</a></li>
+						<li><a href="#">HEATED</a></li>
+						<li id="hide1"><a href="#">TECH</a></li>
+						<li id="hide2"><a href="#">STARTUPS</a></li>
+						<li id="hide3"><a href="#">SELF</a></li>
+						<li id="hide4"><a href="#">POLITICS</a></li>
+						<li id="hide5"><a href="#">HEALTH</a></li>
+						<li id="hide6"><a href="#">DESIGN</a></li>
+						<li id="hide7"><a href="#">HUMAN PARTS</a></li>
+						<li id="hide8"><a href="#">MORE</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<br><br><br>
+
+		<div class="container" id="post1"></div>
+		<div class="container" id="post2"></div>
+		<div class="container" id="post3"></div>
+		<div class="container" id="post4"></div>
+
+
+
+		<script src="jquery.min.js"></script>
+		<script src="ejs.min.js"></script>
+		<script src="ejs-render-remote.js"></script>
+
+
+		<script>
+			//render the template
+
+			$.getJSON("https://1688918b-67ad-4ecd-a80b-d8e8b3a98b8b.mock.pstmn.io/page1/post1", function (post) {
+				$('#post1').html(ejs.rr('templates/temp1.ejs', post));
+			});
+			$.getJSON("https://1688918b-67ad-4ecd-a80b-d8e8b3a98b8b.mock.pstmn.io/page2/post2", function (post) {
+				$('#post2').html(ejs.rr('templates/temp1.ejs', post));
+			});
+			$.getJSON("https://1688918b-67ad-4ecd-a80b-d8e8b3a98b8b.mock.pstmn.io/page1/post3", function (post) {
+				$('#post3').html(ejs.rr('templates/temp1.ejs', post));
+			});
+			$.getJSON("https://1688918b-67ad-4ecd-a80b-d8e8b3a98b8b.mock.pstmn.io/page1/post4", function (post) {
+				$('#post4').html(ejs.rr('templates/temp1.ejs', post));
+			});
+		</script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+ <div class="row">
+            <div class="col-md-12">
+                <h4 style="padding:10px;">Responses</h4>
+                <div class="icon">
+                    <i class="fa fa-comment-o icon"></i>
+                </div>
+                <div class="form">
+                    <input type="text" value="Write a response...">
+                </div>
+
+                <hr>
+            </div>
+            <br>
+
+            <h5>Conversation between <font color="skyblue"><%=post["auth1"]%></font> and <font color="skyblue"><%=post["auth2"]%>
+                </font>.</h5>
+
+            <br><br><br>
+        </div>
+        <div class="row">
+            <div class="container" id="c1">
+                <br><br>
+                <div class="row">
+                    <div>
+                        <img src="<%=post['img1']%>"</img>
+                    </div>
+                    <div>
+                        <div>
+                            <p>
+                                <font color="skyblue"><%=post["name1"]%></font>
+                            </p>
+                        </div>
+                        <div>
+                            <p><%=post["date"]%></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p id="com1"><%=post["com1"]%></p>
+
+                </div>
+                <div class="row" id="tag1">
+                    <div id="clap">
+                        <img src="https://img.icons8.com/ios/50/000000/applause.png">
+                    </div>
+
+                    <div id="numclap">
+                        <p><%=post["clap"]%></p>
+                    </div>
+                    <div id="gap"></div>
+                    <div id="response">
+                        <p><%=post["responses"]%></p>
+                    </div>
+
+                    <div id="bookmark">
+
+                        <i class="fa fa-bookmark-o"></i>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="container" id="c2">
+                <br><br>
+                <div class="row">
+                    <div>
+                        <img src="<%=post['img2']%>"></img>
+                    </div>
+                    <div>
+                        <div>
+                            <p>
+                                <font color="skyblue"><%=post["name2"]%></font>
+                            </p>
+                        </div>
+                        <div>
+                            <p><%=post["new_date"]%></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <p>Thanks!</p>
+                </div>
+                <div class="row" id="tag2">
+                    <div id="clap1">
+                        <img src="https://img.icons8.com/ios/50/000000/applause.png">
+                    </div>
+                    <div id="bookmark1">
+
+                        <i class="fa fa-bookmark-o"></i>
+
+                    </div>
+                </div>
+            </div>
+        </div>
